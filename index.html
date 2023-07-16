@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escala de Glasgow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Escala de Glasgow</h1>
+    </header>
+    <main>
+        <div class="container">
+            <label for="glasgow-eye">Respuesta Ocular:</label>
+            <select id="glasgow-eye">
+                <option value="4">Espontánea</option>
+                <option value="3">A la orden verbal</option>
+                <option value="2">Al estímulo del dolor</option>
+                <option value="1">Ninguna</option>
+            </select>
+
+            <label for="glasgow-verbal">Respuesta Verbal:</label>
+            <select id="glasgow-verbal">
+                <option value="5">Orientado</option>
+                <option value="4">Confuso</option>
+                <option value="3">Palabras inapropiadas</option>
+                <option value="2">Sonidos incomprensibles</option>
+                <option value="1">Ninguna</option>
+            </select>
+
+            <label for="glasgow-motor">Respuesta Motora:</label>
+            <select id="glasgow-motor">
+                <option value="6">Obedece órdenes</option>
+                <option value="5">Localiza el dolor</option>
+                <option value="4">Retira al dolor</option>
+                <option value="3">Flexión anormal</option>
+                <option value="2">Extensión anormal</option>
+                <option value="1">Ninguna</option>
+            </select>
+
+            <button id="calculate-btn" class="btn">Calcular</button>
+            <div id="result-container" class="resultado"></div>
+
+        </div>
+    </main>
+    <footer id="footer">
+        <div id="typewriter">
+          <span id="typed-text"></span>
+          <span id="cursor"></span>
+        </div>
+      </footer>
+      
+
+    <script src="script.js"></script>
+</body>
+</html>
